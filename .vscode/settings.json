@@ -1,0 +1,16 @@
+{
+  "git.path": "/usr/bin/git",
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "git.confirmSync": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.tree.indent": 18,
+  "window.autoDetectColorScheme": true,
+  "window.zoomLevel": -1,
+  "workbench.colorTheme": "Default Light+"
+}

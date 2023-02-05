@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/node-lts-strictest-esm/tsconfig.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+    "module": "CommonJS"
+  },
+  "exclude": ["node_modules", "./dist", ".eslintrc.cjs", "*.json"],
+  "include": ["."]
+}
