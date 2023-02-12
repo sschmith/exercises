@@ -83,15 +83,13 @@ export default class Graph {
   }
 }
 
-var graph = new Graph();
-var vertices: Array<string> = ["A", "B", "C", "D", "E", "F"];
+const graph = new Graph();
+const vertices: Array<string> = ["A", "B", "C", "D", "E", "F"];
 
-// adding vertices
-for (var i = 0; i < vertices.length; i++) {
-  graph.addVertex(vertices[i]);
-}
+vertices.forEach((vertex) => {
+  graph.addVertex(vertex);
+});
 
-// adding edges
 graph.addEdge("A", "B");
 graph.addEdge("A", "D");
 graph.addEdge("A", "E");
