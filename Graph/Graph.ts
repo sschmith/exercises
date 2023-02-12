@@ -87,7 +87,7 @@ export default class Graph {
 const graph = new Graph();
 const vertices: Array<string> = ["A", "B", "C", "D", "E", "F"];
 
-vertices.forEach((vertex) => {
+vertices.forEach((vertex: string) => {
   graph.addVertex(vertex);
 });
 
@@ -101,7 +101,7 @@ graph.addEdge("E", "C");
 graph.addEdge("C", "F");
 
 console.log(
-  "\n============================\nExecuting Bread-First Search\n============================\n"
+  "\n============================\nExecuting Breadth-First Search\n============================\n"
 );
 
 console.log(
