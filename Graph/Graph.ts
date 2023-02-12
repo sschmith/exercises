@@ -62,7 +62,7 @@ export default class Graph {
 
     this.visitedCount = 0;
 
-    const dfs = function (this: Graph, vertex: string): boolean {
+    const _dfs = function (this: Graph, vertex: string): boolean {
       const neighbors = this.adjacencyList.get(vertex) || [];
       visited[vertex] = true;
       this.visitedCount++;
@@ -72,14 +72,14 @@ export default class Graph {
       for (let i = 0; i < neighbors?.length; i++) {
         const neighbor = neighbors[i] as string;
         if (!visited[neighbor]) {
-          found = dfs(neighbor);
+          found = _dfs(neighbor);
         }
         if (found) return found;
       }
       return found;
     }.bind(this);
 
-    return dfs(startingVertex);
+    return _dfs(startingVertex);
   }
 }
 
