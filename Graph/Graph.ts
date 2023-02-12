@@ -64,6 +64,7 @@ export default class Graph {
 
     const _dfs = function (this: Graph, vertex: string): boolean {
       const neighbors = this.adjacencyList.get(vertex) || [];
+
       visited[vertex] = true;
       this.visitedCount++;
 
