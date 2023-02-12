@@ -59,3 +59,4 @@ function sumNodes(inputArray: Array<number>): number {
 
 sumNodes([1, 2, 3]);
 sumNodes([3, 2, 5, 9, -1, 10]);
+sumNodes([5, 12, 6, 7, -1, 14, 9, 6, 7]);
