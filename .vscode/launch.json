@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Graph",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/Graph",
+      "runtimeArgs": [
+        "--loader",
+        "ts-node/esm",
+        "--experimental-specifier-resolution=node"
+      ],
+      "program": "${workspaceFolder}/Graph/Graph.ts"
+    }
+  ]
+}
