@@ -36,7 +36,7 @@ export default class Graph {
 
     while (queue.length > 0) {
       const dequeued: string | undefined = queue.shift();
-      let neighbors = dequeued ? this.adjacencyList.get(dequeued) : [];
+      let neighbors = dequeued ? this.adjacencyList.get(dequeued) : null;
 
       if (neighbors) {
         for (let i = 0; i < neighbors.length; i++) {
@@ -63,7 +63,7 @@ export default class Graph {
     this.visitedCount = 0;
 
     const _dfs = function (this: Graph, vertex: string): boolean {
-      const neighbors = vertex ? this.adjacencyList.get(vertex) : [];
+      const neighbors = vertex ? this.adjacencyList.get(vertex) : null;
       visited[vertex] = true;
       this.visitedCount++;
 
