@@ -13,7 +13,7 @@ export default class Graph {
     }
   }
 
-  addEdge(vertex: string, edge: string) {
+  connect(vertex: string, edge: string) {
     const vertexForEdge: Array<string> | undefined =
       this.adjacencyList.get(edge);
     this.adjacencyList.get(vertex)?.push(edge);
@@ -39,7 +39,7 @@ export default class Graph {
       let neighbors = dequeued ? this.adjacencyList.get(dequeued) : [];
 
       if (neighbors) {
-        for (let i = 0; i < neighbors?.length; i++) {
+        for (let i = 0; i < neighbors.length; i++) {
           const neighbor = neighbors.at(i);
           if (neighbor && !visited[neighbor]) {
             // mark this node as visited
@@ -70,9 +70,9 @@ export default class Graph {
       if (vertex === target) return true;
 
       if (neighbors) {
-        for (let i = 0; i < neighbors?.length; i++) {
-          const neighbor = neighbors[i] as string;
-          if (!visited[neighbor]) {
+        for (let i = 0; i < neighbors.length; i++) {
+          const neighbor = neighbors[i];
+          if (neighbor && !visited[neighbor]) {
             found = _dfs(neighbor);
           }
           if (found) return found;

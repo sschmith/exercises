@@ -7,14 +7,14 @@ vertices.forEach((vertex: string) => {
   graph.addVertex(vertex);
 });
 
-graph.addEdge("A", "B");
-graph.addEdge("A", "D");
-graph.addEdge("A", "E");
-graph.addEdge("B", "C");
-graph.addEdge("D", "E");
-graph.addEdge("E", "F");
-graph.addEdge("E", "C");
-graph.addEdge("C", "F");
+graph.connect("A", "B");
+graph.connect("A", "D");
+graph.connect("A", "E");
+graph.connect("B", "C");
+graph.connect("D", "E");
+graph.connect("E", "F");
+graph.connect("E", "C");
+graph.connect("C", "F");
 
 console.log(
   "\n============================\nExecuting Breadth-First Search\n============================\n"
