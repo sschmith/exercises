@@ -4,6 +4,6 @@ export default {
   plugins: ["@typescript-eslint"],
   root: true,
   env: {
-    node: true,
-  },
+    node: true
+  }
 };

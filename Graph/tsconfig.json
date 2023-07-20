@@ -3,10 +3,17 @@
   "compilerOptions": {
     "rootDir": ".",
     "baseUrl": ".",
-    "module": "CommonJS",
-    "watch": true
+    "module": "Node16",
+    "target": "ES6",
+    "ignoreDeprecations": "5.0"
+    // "verbatimModuleSyntax": true
   },
   "exclude": ["node_modules", "./dist", ".eslintrc.cjs", "*.json"],
   "include": ["."],
-  "watchOptions": { "watchDirectory": "useFsEvents" }
+  "watchOptions": {
+    "watchDirectory": "useFsEvents",
+    "watchFile": "useFsEvents",
+    "fallbackPolling": "dynamicpriority",
+    "synchronousWatchDirectory": true
+  }
 }
