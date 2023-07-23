@@ -8,7 +8,7 @@
   },
   "main": "Graph.test.ts",
   "scripts": {
-    "test": "npx ts-node Graph.test.ts",
+    "test": "npx ts-node test/Graph.test.ts",
     "start": "npm run test"
   },
   "author": "Stephen Schmith",

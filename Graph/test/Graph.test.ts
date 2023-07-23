@@ -1,4 +1,4 @@
-import Graph from "./Graph";
+import Graph from "../src/Graph";
 
 const graph = new Graph();
 const vertices: Array<string> = ["A", "B", "C", "D", "E", "F"];

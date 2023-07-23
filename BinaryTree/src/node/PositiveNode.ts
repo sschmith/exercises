@@ -1,5 +1,5 @@
 import Node from "./Node";
-import type { Nullable } from "./types/Nullable";
+import type { Nullable } from "../types/Nullable";
 
 export default class PositiveNode extends Node {
   static MIN_VALUE: number = -1;
