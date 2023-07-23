@@ -4,6 +4,7 @@
     "rootDir": ".",
     "baseUrl": ".",
     "module": "Node16",
+    "target": "ES6",
     "ignoreDeprecations": "5.0"
   },
   "exclude": ["node_modules", "./dist", ".eslintrc.cjs", "*.json"],
