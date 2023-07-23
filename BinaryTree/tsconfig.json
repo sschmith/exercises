@@ -3,7 +3,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "baseUrl": ".",
-    "module": "CommonJS",
+    "module": "Node16",
     "ignoreDeprecations": "5.0"
   },
   "exclude": ["node_modules", "./dist", ".eslintrc.cjs", "*.json"],
