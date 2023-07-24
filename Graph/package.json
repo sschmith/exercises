@@ -10,11 +10,11 @@
   },
   "main": "Graph.test.ts",
   "scripts": {
-    "test": "ts-node test/BinaryTree.test.ts",
-    "start": "npm run test",
-    "compile": "tsc",
     "clean": "rimraf ./dist",
-    "clean-compile": "npm run clean && npm run compile"
+    "clean-transpile": "npm run clean && npm run transpile",
+    "start": "npm run transpile && node dist/test/Graph.test.js",
+    "test": "ts-node test/Graph.test.ts",
+    "transpile": "tsc"
   },
   "devDependencies": {
     "@tsconfig/node-lts-strictest-esm": "^18.12.1",
