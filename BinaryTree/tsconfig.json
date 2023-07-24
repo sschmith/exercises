@@ -5,8 +5,24 @@
     "baseUrl": ".",
     "module": "Node16",
     "target": "ES6",
+    "outDir": "dist/",
     "ignoreDeprecations": "5.0"
+    // "verbatimModuleSyntax": true
   },
-  "exclude": ["node_modules", "./dist", ".eslintrc.cjs", "*.json"],
-  "include": ["."]
+  "exclude": [
+    "node_modules",
+    "./dist",
+    ".eslintrc.cjs",
+    "*.json",
+    ".vscode",
+    ".npmrc",
+    ".gitignore"
+  ],
+  "include": ["."],
+  "watchOptions": {
+    "watchDirectory": "useFsEvents",
+    "watchFile": "useFsEvents",
+    "fallbackPolling": "dynamicpriority",
+    "synchronousWatchDirectory": true
+  }
 }
