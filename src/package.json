@@ -1,0 +1,29 @@
+{
+    "name": "typescript-exercises",
+    "version": "1.0.0",
+    "workspaces": [
+        "BinaryTree",
+        "Graph"
+    ],
+    "scripts": {
+        "start": "ts-node BinaryTree/test/BinaryTree.test.ts && ts-node Graph/test/Graph.test.ts"
+    },
+    "author": "Stephen Schmith",
+    "license": "ISC",
+    "dependencies": {
+        "BinaryTree": "1.0.0",
+        "Graph": "1.0.0"
+    },
+    "devDependencies": {
+        "@tsconfig/node-lts-strictest-esm": "^18.12.1",
+        "@types/node": "^20.4.2",
+        "@typescript-eslint/eslint-plugin": "6.1.0",
+        "@typescript-eslint/parser": "6.1.0",
+        "eslint": "^8.45.0",
+        "json-schema": "^0.4.0",
+        "prettier": "^3.0.3",
+        "rimraf": "^5.0.1",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.9.5"
+    }
+}

@@ -1,0 +1,31 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const Graph_1 = __importDefault(require("../src/Graph"));
+const graph = new Graph_1.default();
+const vertices = ["A", "B", "C", "D", "E", "F"];
+vertices.forEach((vertex) => {
+    graph.addVertex(vertex);
+});
+graph.connect("A", "B");
+graph.connect("A", "D");
+graph.connect("A", "E");
+graph.connect("B", "C");
+graph.connect("D", "E");
+graph.connect("E", "F");
+graph.connect("E", "C");
+graph.connect("C", "F");
+console.log("\n============================\nExecuting Breadth-First Search\n============================\n");
+console.log("Is A connected to B?", graph.bfs("B", "A"), "in " + graph.visitedCount + " visits");
+console.log("Is C connected to A?", graph.bfs("A", "C"), " with " + graph.visitedCount + " visits");
+console.log("Is Z connected to A?", graph.bfs("A", "Z"), "in " + graph.visitedCount + " visits");
+console.log("Is A connected to F?", graph.bfs("A", "F"), "in " + graph.visitedCount + " visits");
+console.log("Is G connected to F?", graph.bfs("G", "F"), "in " + graph.visitedCount + " visits");
+console.log("\n============================\nExecuting Depth-First Search\n============================\n");
+console.log("Is A connected to B?", graph.dfs("B", "A"), "in " + graph.visitedCount + " visits");
+console.log("Is C connected to A?", graph.dfs("A", "C"), " with " + graph.visitedCount + " visits");
+console.log("Is Z connected to A?", graph.dfs("A", "Z"), "in " + graph.visitedCount + " visits");
+console.log("Is A connected to F?", graph.dfs("A", "F"), "in " + graph.visitedCount + " visits");
+console.log("Is G connected to F?", graph.dfs("G", "F"), "in " + graph.visitedCount + " visits");

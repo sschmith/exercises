@@ -12,8 +12,12 @@ function sumNodes(inputArray: Array<number>): number {
   return total;
 }
 
+console.group("BinaryTree\n");
+
 sumNodes([1, 2, 3]);
 sumNodes([3, 2, 5, 9, -1, 10]);
 sumNodes([5, 12, 6, 7, -1, 14, 9, 6, 7]);
 sumNodes([1]);
 sumNodes([-1]);
+
+console.groupEnd();

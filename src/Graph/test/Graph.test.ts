@@ -16,6 +16,8 @@ graph.connect("E", "F");
 graph.connect("E", "C");
 graph.connect("C", "F");
 
+console.group("\nGraph");
+
 console.log(
   "\n============================\nExecuting Breadth-First Search\n============================\n"
 );
@@ -83,3 +85,5 @@ console.log(
   graph.dfs("G", "F"),
   "in " + graph.visitedCount + " visits"
 );
+
+console.groupEnd();
