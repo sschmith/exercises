@@ -10,9 +10,7 @@
   },
   "main": "Graph.test.ts",
   "scripts": {
-    "clean": "rimraf ./dist",
-    "clean-transpile": "npm run clean && npm run transpile",
-    "start": "npm run transpile && node dist/test/Graph.test.js",
+    "start": "npm run transpile && node ../../dist/Graph/test/Graph.test.js",
     "test": "ts-node test/Graph.test.ts",
     "transpile": "tsc"
   }
