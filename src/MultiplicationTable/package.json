@@ -1,0 +1,17 @@
+{
+    "name": "multiplication-table",
+    "version": "1.0.0",
+    "description": "A simple multiplication table implemented in NodeJS and TypeScript",
+    "author": "Stephen Schmith",
+    "license": "ISC",
+    "engines": {
+        "npm": ">=9.0.0",
+        "node": ">=18.0.0"
+    },
+    "main": "MultiplicationTable.test.ts",
+    "scripts": {
+        "start": "npm run transpile && node ../../dist/MultiplicationTable/test/MultiplicationTable.test.js",
+        "test": "ts-node test/MultiplicationTable.test.ts",
+        "transpile": "tsc"
+    }
+}

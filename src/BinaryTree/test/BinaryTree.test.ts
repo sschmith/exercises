@@ -8,6 +8,7 @@ function sumNodes(inputArray: Array<number>): number {
   total = tree.sumChildren();
 
   console.info("sumNodes: ", total);
+  console.info("test");
 
   return total;
 }

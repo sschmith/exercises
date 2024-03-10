@@ -1,0 +1,7 @@
+{
+  "eslint.validate": ["typescript", "javascript"],
+  "eslint.run": "onType",
+  "eslint.workingDirectories": ["./"],
+  "json.schemaDownload.enable": true,
+  "git.decorations.enabled": true
+}

@@ -9,7 +9,8 @@
         "clean": "npx rimraf ../dist",
         "binarytree": "cd BinaryTree && npm run start",
         "graph": "cd Graph && npm run start",
-        "start": "npm run clean && npm run binarytree && npm run graph"
+        "multiplication-table": "cd MultiplicationTable && npm run start",
+        "start": "npm run clean && npm run binarytree && npm run graph && npm run multiplication-table"
     },
     "author": "Stephen Schmith",
     "license": "ISC",
