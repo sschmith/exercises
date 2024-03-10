@@ -1,9 +1,8 @@
-import MultiplicationTable from "../src/MultiplicationTable";
+import printMultiplicationTable from "../src/MultiplicationTable";
 
 console.group("Multiplication Table");
-MultiplicationTable.printTable(3);
-MultiplicationTable.printTable(5);
-MultiplicationTable.printTable(-1);
-MultiplicationTable.printTable(10);
-MultiplicationTable.printTable("asdf" as unknown as number);
+printMultiplicationTable(-1);
+printMultiplicationTable(3);
+printMultiplicationTable(5);
+printMultiplicationTable(10);
 console.groupEnd();
