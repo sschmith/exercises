@@ -10,7 +10,7 @@
     },
     "main": "MultiplicationTable.test.ts",
     "scripts": {
-        "start": "npm run transpile && node ../../dist/MultiplicationTable/test/MultiplicationTable.test.js",
+        "start": "npm run transpile && node ../../dist/src/MultiplicationTable/test/MultiplicationTable.test.js",
         "test": "ts-node test/MultiplicationTable.test.ts",
         "transpile": "tsc"
     }

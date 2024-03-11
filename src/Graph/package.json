@@ -10,7 +10,7 @@
   },
   "main": "Graph.test.ts",
   "scripts": {
-    "start": "npm run transpile && node ../../dist/Graph/test/Graph.test.js",
+    "start": "npm run transpile && node ../../dist/src/Graph/test/Graph.test.js",
     "test": "ts-node test/Graph.test.ts",
     "transpile": "tsc"
   }

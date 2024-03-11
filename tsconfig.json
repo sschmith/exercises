@@ -8,8 +8,12 @@
     "outDir": "dist/",
     "rootDir": ".",
     "target": "ES2022",
-    "typeRoots": ["node_modules/@types"],
-    "types": ["node"]
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "node"
+    ]
   },
   "exclude": [
     "node_modules",
@@ -20,7 +24,9 @@
     ".npmrc",
     ".gitignore"
   ],
-  "include": ["."],
+  "include": [
+    "."
+  ],
   "watchOptions": {
     "fallbackPolling": "dynamicpriority",
     "synchronousWatchDirectory": true,

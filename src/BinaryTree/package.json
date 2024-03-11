@@ -10,7 +10,7 @@
   },
   "main": "BinaryTree.test.ts",
   "scripts": {
-    "start": "npm run transpile && node ../../dist/BinaryTree/test/BinaryTree.test.js",
+    "start": "npm run transpile && node ../../dist/src/BinaryTree/test/BinaryTree.test.js",
     "test": "ts-node test/Graph.test.ts",
     "transpile": "tsc"
   }
