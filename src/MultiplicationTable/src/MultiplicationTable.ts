@@ -1,7 +1,7 @@
 export default function printMultiplicationTable(tableSize: number) {
   let output: string = "";
   if (tableSize <= 0) {
-    console.info("Table size cannot be negative or zero.\n");
+    console.error("Table size cannot be negative or zero.\n");
     return;
   }
   for (let i = 1; i <= tableSize; i++) {
