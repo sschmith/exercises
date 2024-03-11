@@ -11,6 +11,5 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "workbench.tree.indent": 18,
   "window.autoDetectColorScheme": true,
-  "window.zoomLevel": 0,
-  "workbench.colorTheme": "Default Light Modern"
+  "window.zoomLevel": 0
 }

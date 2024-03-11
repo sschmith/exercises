@@ -5,14 +5,15 @@
     "ignoreDeprecations": "5.0",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "outDir": "../dist/",
+    "outDir": "dist/",
     "rootDir": ".",
     "target": "ES2022",
+    "typeRoots": ["node_modules/@types"],
     "types": ["node"]
   },
   "exclude": [
     "node_modules",
-    "../dist",
+    "dist",
     "*.eslintrc.cjs",
     "*.json",
     ".vscode",
