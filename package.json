@@ -7,7 +7,7 @@
         "src/MultiplicationTable"
     ],
     "scripts": {
-        "clean": "npx rimraf ../dist",
+        "clean": "npx rimraf dist",
         "binary-tree": "cd src/BinaryTree && npm run start",
         "graph": "cd src/Graph && npm run start",
         "multiplication-table": "cd src/MultiplicationTable && npm run start",
