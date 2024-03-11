@@ -2,30 +2,6 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Graph",
-      "type": "node",
-      "request": "launch",
-      "cwd": "${workspaceFolder}/Graph",
-      "runtimeArgs": [
-        "--loader",
-        "ts-node/esm",
-        "--experimental-specifier-resolution=node"
-      ],
-      "program": "${workspaceFolder}/Graph/Graph.ts"
-    },
-    {
-      "name": "MultiplicationTable",
-      "type": "node",
-      "request": "launch",
-      "cwd": "${workspaceFolder}/MultiplicationTable",
-      "runtimeArgs": [
-        "--loader",
-        "ts-node/esm",
-        "--experimental-specifier-resolution=node"
-      ],
-      "program": "${workspaceFolder}/MultiplicationTable/MultiplicationTable.ts"
-    },
-    {
       "type": "node-terminal",
       "name": "Run Script: start",
       "request": "launch",
