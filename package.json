@@ -14,20 +14,24 @@
         "start": "npm run clean && npm run binary-tree && npm run graph && npm run multiplication-table"
     },
     "author": "Stephen Schmith",
+    "description": "A set of exercises in TypeScript for NodeJS.",
     "license": "ISC",
+    "engines": {
+        "node": ">=22"
+    },
     "dependencies": {
         "binary-tree": "1.0.0",
         "graph": "1.0.0",
         "multiplication-table": "1.0.0"
     },
     "devDependencies": {
-        "@tsconfig/node-lts-strictest-esm": "^18.12.1",
-        "@types/node": "^20.11.25",
-        "@typescript-eslint/eslint-plugin": "^7.1.1",
-        "@typescript-eslint/parser": "^7.1.1",
-        "eslint": "^8.57.0",
+        "@tsconfig/node-lts": "22.0.1",
+        "@types/node": "^22.13.0",
+        "@typescript-eslint/eslint-plugin": "^8.22.0",
+        "@typescript-eslint/parser": "^8.22.0",
+        "eslint": "^9.19.0",
         "rimraf": "latest",
         "ts-node": "latest",
-        "typescript": "5.4.2"
+        "typescript": "^5.7.3"
     }
 }
