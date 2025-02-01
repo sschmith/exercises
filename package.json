@@ -17,7 +17,7 @@
     "description": "A set of exercises in TypeScript for NodeJS.",
     "license": "ISC",
     "engines": {
-        "node": ">=18"
+        "node": ">=22"
     },
     "dependencies": {
         "binary-tree": "1.0.0",
